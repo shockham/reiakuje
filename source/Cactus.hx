@@ -25,12 +25,6 @@ class Cactus extends FlxSprite{
     override public function update():Void{
         super.update();
 
-        if(FlxG.collide(this, player) && FlxG.keys.Z  && player.water < 500){
-            health -= 1;
-            player.water += 2;
-            Reg.score += 5;
-        }
-
         if(health < 0){
             kill();
         }

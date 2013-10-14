@@ -16,14 +16,23 @@ class MenuState extends FlxState{
     
     override public function create():Void{
         // Set a background color
-        FlxG.bgColor = 0xffede7b2;
+        FlxG.bgColor = 0xfffbf7e8;
         // Show the mouse (in case it hasn't been disabled)
         #if !FLX_NO_MOUSE
         // FlxG.mouse.show();
         #end
         
-        add(new FlxText(0,0,100,"Polar bear in the desser!"));
-        add(new FlxText(0,100,100,"Press x to start!"));
+        var instruction:FlxText = new FlxText(0,90,FlxG.width,"press x to start.");
+        instruction.size = 30;
+        instruction.color = 0xff414141;
+        instruction.font = "assets/Comfortaa-Regular.ttf";
+        add(instruction);
+
+        var title:FlxText =  new FlxText(0,0,FlxG.width,"reiakuje.");
+        title.size = 100;
+        title.color = 0xff000000;
+        title.font = "assets/Comfortaa-Regular.ttf";
+        add(title);
 
         super.create();
     }

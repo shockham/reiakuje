@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<app title="MochiJam" file="MochiJam" main="Main" version="0.0.1" company="Zaphod" />
+	<app title="reiakuje" file="reiakuje" main="Main" version="0.0.1" company="shockham" />
 	
-	<window width="640" height="480" fps="30" orientation="portrait" resizable="true" if="web" />
-	<window width="640" height="480" fps="30" orientation="landscape" fullscreen="false" hardware="true" vsync="true" unless="web" />
+	<window width="1280" height="720" fps="60" orientation="portrait" resizable="true" if="web" />
+	<window width="1280" height="720" fps="60" orientation="landscape" fullscreen="false" hardware="true" vsync="true" unless="web" />
  	
 	<set name="BUILD_DIR" value="export" />
 	
